@@ -1,5 +1,5 @@
 {
-  "name": "monorepo-template",
+  "name": "notes",
   "version": "0.0.0",
   "workspaces": [
     "packages/*"
@@ -7,6 +7,7 @@
   "scripts": {},
   "devDependencies": {
     "@tsconfig/node22": "^22",
+    "@types/node": "^24.5.1",
     "typescript": "^5"
   },
   "dependencies": {
