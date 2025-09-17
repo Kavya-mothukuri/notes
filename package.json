@@ -7,10 +7,12 @@
   "scripts": {},
   "devDependencies": {
     "@tsconfig/node22": "^22",
+    "@types/aws-lambda": "^8.10.152",
     "@types/node": "^24.5.1",
     "typescript": "^5"
   },
   "dependencies": {
+    "@notes/core": "^0.0.0",
     "sst": "^3"
   }
 }

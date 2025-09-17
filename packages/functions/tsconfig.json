@@ -3,5 +3,11 @@
   "compilerOptions": {
     "module": "ESNext",
     "moduleResolution": "Bundler",
-  },
+
+    // 👇 add these
+    "baseUrl": ".",
+    "paths": {
+      "@notes/core/*": ["packages/core/src/*"]
+    }
+  }
 }
