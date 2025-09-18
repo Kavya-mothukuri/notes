@@ -20,7 +20,7 @@ export const main = Util.handler(async (event: APIGatewayProxyEvent) => {
   const params = {
     TableName: Resource.Notes.name,   // ✅ correct usage
     Item: {
-      userId: "123",                  // stubbed userId for now
+      userId: event.requestContext.authorizer?.iam.cognitoIdentity.identityId,                  // stubbed userId for now
       noteId: uuid.v1(),              // unique id
       content: data.content,
       attachment: data.attachment,
