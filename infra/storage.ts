@@ -6,6 +6,11 @@ export const table = new sst.aws.Dynamo("Notes", {
     },
     primaryIndex: { hashKey: "userId", rangeKey: "noteId" },
   });
+  new sst.aws.Bucket("Uploads", {
+    cors: {
+      allowMethods: ["GET"]
+    }
+  });
 
   export const bucket = new sst.aws.Bucket("Uploads");
   // Create a secret for Stripe
