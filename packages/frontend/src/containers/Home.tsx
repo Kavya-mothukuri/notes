@@ -70,7 +70,7 @@ export default function Home() {
   function renderLander() {
     return (
       <div className="lander">
-        <h1>Home</h1>
+        <h1>Nodoc</h1>
         <p className="text-muted">A simple note taking app</p>
       </div>
     );
