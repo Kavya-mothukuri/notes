@@ -6,7 +6,7 @@ import { Billing } from "@notes/core/billing";
 export const main = Util.handler(async (event) => {
   const { storage, source } = JSON.parse(event.body || "{}");
   const amount = Billing.compute(storage);
-  const description = "Scratch charge";
+  const description = "Home charge";
 
   const stripe = new Stripe(
     Resource.StripeSecretKey.value,
